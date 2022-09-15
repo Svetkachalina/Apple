@@ -63,6 +63,18 @@
     }
     .banner__btn {
         font-size: 16px;
+        transition-property: background-color, color;
+        transition-duration: 0.3s;
+        transition-timing-function: ease-in-out;
+    }
+    .banner__btn:hover,
+    .banner__btn:focus {
+        background-color: #fff;
+    }
+    
+    .banner__btn:active {
+        background-color: #2238ff;
+        color: #fff;
     }
 }
 @media (min-width: 1200px) {
