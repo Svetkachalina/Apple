@@ -40,3 +40,16 @@
 .product__more:active {
     color: #8793ff;
 }
+
+
+@media (min-width: 768px) {
+    .product {
+        width: 340px;
+    }
+    .product__image-wrapper {
+        height: 340px;
+    }
+    .product__image {
+        width: 235px;
+    }
+}

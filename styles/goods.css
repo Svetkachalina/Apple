@@ -20,7 +20,7 @@
 
 .goods__arrow {
     position: absolute;
-    top: 115px;
+    top: calc((290px / 2) - 30px);
     display: block;
     width: 60px;
     height: 60px;
@@ -37,4 +37,11 @@
 .goods__arrow_prev {
     right: -5px;
     transform: rotate(180deg);
+}
+
+@media (min-width: 768px) {
+    .goods__arrow {
+        top: calc((340px / 2) - 30px);
+    }
+    
 }

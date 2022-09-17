@@ -1,6 +1,6 @@
 import Swiper from '../lib/swiper-bundle.esm.browser.min.js';
 
-const Swiper = new Swiper('.goods__block', {
+new Swiper('.goods__block', {
     slidesPerView: 1,
     spaceBetween: 20,
     breakpoints: {
