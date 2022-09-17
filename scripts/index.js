@@ -24,3 +24,30 @@ new Swiper('.goods__block', {
         prevEl: '.goods__arrow_next'
     }
 });
+
+
+const smoothScroll = (trigger) => {
+    const SPEED = 0.3;
+    const scrolled = e => {
+      e.preventDefault();
+      const target = e.target;
+  
+      if (target.matches('[href^="#"]')) {
+        let start = 0;
+        const pageY = window.pageYOffset;
+        const hash = target.getAttribute('href');
+  
+        if (hash === '#') return;
+  
+        const elem = document.querySelector(hash);
+        console.log(elem);
+        elem.scrollIntoView({
+            behavior: 'smooth'
+        });
+      }
+    };
+    trigger.addEventListener('click', scrolled);
+  };
+
+  smoothScroll(document.querySelector('.header__navigation'));
+  smoothScroll(document.querySelector('.footer__navigation'));
