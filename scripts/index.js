@@ -20,7 +20,7 @@ new Swiper('.goods__block', {
         },
     },
     navigation: {
-        prevEl: '.goods__arrow_prev',
-        nextEl: '.goods__arrow_next'
+        nextEl: '.goods__arrow_prev',
+        prevEl: '.goods__arrow_next'
     }
 });
