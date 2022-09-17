@@ -43,5 +43,10 @@
     .goods__arrow {
         top: calc((340px / 2) - 30px);
     }
-    
+    .goods__arrow_prev {
+        right: 10px;
+    }
+    .goods__arrow_next {
+        left: 10px;
+    }
 }
