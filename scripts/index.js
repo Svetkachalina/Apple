@@ -71,12 +71,12 @@ const modal = document.querySelector('.modal');
 
 productMore.forEach((btn) => {
     btn.addEventListener('click', () => {
-        modal.classList.add('modal_open')
+        modal.classList.add('modal_open');
     });
 });
 
-modal.addEventListener('click', (target) => {
-    if (target === modal) {
+modal.addEventListener('click', (event) => {
+    if (event.target === modal) {
         modal.classList.remove('modal_open');
     }
 });
